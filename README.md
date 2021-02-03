@@ -32,4 +32,6 @@ So, you need to install it in advance.
 - The compiled files will be stored in the sub-directory: ./static and you can access it via http://127.0.0.1:3000/js/[your_js_file_name]
 - /js is the alias of ./static
 
-## MIT
+## License
+
+MIT
