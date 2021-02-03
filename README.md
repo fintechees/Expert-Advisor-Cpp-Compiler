@@ -19,11 +19,17 @@ So, you need to install it in advance.
 
 2. Run
 
-node app.js
+- node app.js
+- Access https://www.fintechee.com/web-trader/
+- Click the "Console" on the menubar(on the left of the page).
+- Choose "C/C++" tab on the panel.
+- Open your C/C++ file and then click "Generate Indicator" or "Generate EA". C/C++ source codes and JSON will be generated. You can modify your original source codes by the generated codes. The generated parts are used to define the meta information of your program, such as the variables and data output and can be helpful to make your original codes compilable.
+- Click "Compile Indicator" or "Compile EA" after you finish modifying your original codes.
+- Use mql_indicator_loader_plugin or mql_ea_loader_plugin to load the compiled js(and Wenassembly).
 
 3. Compiled files
 
-The compiled files will be stored in the sub-directory: ./static and you can access it via http://127.0.0.1:3000/js/[your js file name]
-/js is the alias of ./static
+- The compiled files will be stored in the sub-directory: ./static and you can access it via http://127.0.0.1:3000/js/[your_js_file_name]
+- /js is the alias of ./static
 
 ## MIT
