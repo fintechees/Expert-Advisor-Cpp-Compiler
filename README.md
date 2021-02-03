@@ -4,6 +4,8 @@ This is a Nodejs package to help Fintechee's users compile C/C++ source codes(to
 
 To know more details about Fintechee, please access our official website: https://www.fintechee.com or our main Github repo: https://github.com/fintechee/Expert-Advisor-Studio
 
+![Fintechee C/C++ compiler](https://github.com/fintechee/Expert-Advisor-Cpp-Compiler/blob/main/cpp.png)
+
 ## Prerequisite
 Emscripten is required to compile C/C++ files.
 So, you need to install it in advance.
