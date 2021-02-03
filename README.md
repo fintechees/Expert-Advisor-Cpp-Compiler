@@ -9,6 +9,7 @@ To know more details about Fintechee, please access our official website: https:
 ## Prerequisite
 Emscripten is required to compile C/C++ files.
 So, you need to install it in advance.
+https://emscripten.org/docs/getting_started/downloads.html#installation-instructions
 
 ## Usage
 1. Installation
