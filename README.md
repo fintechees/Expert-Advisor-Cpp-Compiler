@@ -35,6 +35,9 @@ Please access this page to know more details: https://www.fintechee.com/compatib
 - The output files(js and WebAssembly) will be stored in the sub-directory: ./static
 - you can access ./static via http://127.0.0.1:3000/js/[your_output_js_file_name] (/js refers to ./static)
 
+## Tutorials
+The tutorials will be coming soon.
+
 ## License
 
 MIT
