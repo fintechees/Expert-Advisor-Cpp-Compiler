@@ -30,6 +30,8 @@ https://emscripten.org/docs/getting_started/downloads.html#installation-instruct
 
 Please access this page to know more details: https://www.fintechee.com/compatible-with-mql/
 
+The tool in the page: https://www.fintechee.com/compatible-with-mql/ is an alternative generator to the "Generate Indicator" or "Generate EA" function.
+
 3. Output files
 
 - The output files(js and WebAssembly) will be stored in the sub-directory: ./static
