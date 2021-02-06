@@ -30,10 +30,10 @@ https://emscripten.org/docs/getting_started/downloads.html#installation-instruct
 
 Please access this page to know more details: https://www.fintechee.com/compatible-with-mql/
 
-3. Compiled files
+3. Output files
 
-- The compiled files will be stored in the sub-directory: ./static and you can access it via http://127.0.0.1:3000/js/[your_js_file_name]
-- /js is the alias of ./static
+- The Output files(js and WebAssembly) will be stored in the sub-directory: ./static
+- you can access ./static via http://127.0.0.1:3000/js/[your_output_js_file_name] (/js refers to ./static)
 
 ## License
 
