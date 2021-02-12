@@ -1,13 +1,14 @@
 # Expert-Advisor-Cpp-Compiler
 
-This is a Nodejs package to help Fintechee's users compile C/C++ source codes(to make the expert advisors runnable on browser). It will be installed on your local PC. So, network is not required to compile your C/C++ source files.
+This is a Nodejs package to help Fintechee's users compile C/C++/MQL source codes(to make the expert advisors runnable on browser). It will be installed on your local PC. So, network is not required to compile your C/C++/MQL source files.
 
 To know more details about Fintechee, please access our official website: https://www.fintechee.com or our main Github repo: https://github.com/fintechee/Expert-Advisor-Studio
 
-![Fintechee C/C++ compiler](https://github.com/fintechee/Expert-Advisor-Cpp-Compiler/blob/main/cpp.png)
+![Fintechee C/C++/MQL compiler](https://github.com/fintechee/Expert-Advisor-Cpp-Compiler/blob/main/cpp.png)
+![Fintechee C/C++/MQL compiler](https://raw.githubusercontent.com/fintechee/Expert-Advisor-Cpp-Compiler/main/cppcompiler.png)
 
 ## Prerequisite
-Emscripten is required to compile C/C++ files.
+Emscripten is required to compile C/C++/MQL files.
 So, you need to install it in advance.
 https://emscripten.org/docs/getting_started/downloads.html#installation-instructions
 
