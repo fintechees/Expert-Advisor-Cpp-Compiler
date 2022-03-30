@@ -27,7 +27,7 @@ app.post("/compile", (req, res) => {
     }
 
     if (type == "indicator") {
-      exec('emcc ./static/' + name + '.cpp -o ./static/' + name + '.js -s EXTRA_EXPORTED_RUNTIME_METHODS=\'["ccall", "cwrap", "getValue", "setValue", "addFunction", "UTF8ToString", "lengthBytesUTF8", "stringToUTF8"]\' -s RESERVED_FUNCTION_POINTERS=100 -s MODULARIZE=1 -s \'EXPORT_NAME="IndiPlugIn"\' -s ENVIRONMENT=web -s ALLOW_MEMORY_GROWTH=1', (error, stdout, stderr) => {
+      exec('emcc ./static/' + name + '.cpp -o ./static/' + name + '.js -s EXTRA_EXPORTED_RUNTIME_METHODS=\'["ccall", "cwrap", "getValue", "setValue", "addFunction", "UTF8ToString", "lengthBytesUTF8", "stringToUTF8"]\' -s RESERVED_FUNCTION_POINTERS=100 -s MODULARIZE=1 -s \'EXPORT_NAME="IndiPlugIn"\' -s ENVIRONMENT=web -s ALLOW_MEMORY_GROWTH=1 -s ASYNCIFY -s \'ASYNCIFY_IMPORTS=["jVeriSig"]\' -O3', (error, stdout, stderr) => {
           if (error) {
             msg = `error: ${error.message}`
             console.error(msg)
@@ -43,7 +43,7 @@ app.post("/compile", (req, res) => {
           return res.send({res: msg})
       })
     } else {
-      exec('emcc ./static/' + name + '.cpp -o ./static/' + name + '.js -s EXTRA_EXPORTED_RUNTIME_METHODS=\'["ccall", "cwrap", "getValue", "setValue", "addFunction", "UTF8ToString", "lengthBytesUTF8", "stringToUTF8"]\' -s RESERVED_FUNCTION_POINTERS=100 -s MODULARIZE=1 -s \'EXPORT_NAME="EAPlugIn"\' -s ENVIRONMENT=web -s ASYNCIFY -s \'ASYNCIFY_IMPORTS=["jOrderSend", "jOrderModify", "jOrderClose", "jOrderDelete"]\' -O3', (error, stdout, stderr) => {
+      exec('emcc ./static/' + name + '.cpp -o ./static/' + name + '.js -s EXTRA_EXPORTED_RUNTIME_METHODS=\'["ccall", "cwrap", "getValue", "setValue", "addFunction", "UTF8ToString", "lengthBytesUTF8", "stringToUTF8"]\' -s RESERVED_FUNCTION_POINTERS=100 -s MODULARIZE=1 -s \'EXPORT_NAME="EAPlugIn"\' -s ENVIRONMENT=web -s ASYNCIFY -s \'ASYNCIFY_IMPORTS=["jOrderSend", "jOrderModify", "jOrderClose", "jOrderDelete", "jVeriSig"]\' -O3', (error, stdout, stderr) => {
           if (error) {
             msg = `error: ${error.message}`
             console.error(msg)
