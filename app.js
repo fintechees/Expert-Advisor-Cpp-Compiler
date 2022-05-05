@@ -10,7 +10,7 @@ const port = 3000
 app.use(cors())
 
 app.use(bodyParser.urlencoded({extended: false}))
-app.use(bodyParser.json({limit: "10kb"}))
+app.use(bodyParser.json({limit: "1000kb"}))
 app.use("/js", express.static("static"))
 
 app.post("/compile", (req, res) => {
